@@ -159,8 +159,12 @@ LOGO */
 /* POSITIONING HEADER */
 
 header {
+  position: sticky;
+  top: -1px;
+  z-index: 999;
   padding-top: 24px;
   padding-bottom: 25px;
+  background-color: var(--white-color);
 }
 
 nav {
@@ -603,9 +607,9 @@ FILTER BUTTONS*/
 .image-thumb {
   position: relative;
   overflow: hidden;
-
-  /* overflow: hidden; */
 }
+
+/* OVERLAY */
 
 .overlay {
   position: absolute;
@@ -615,14 +619,12 @@ FILTER BUTTONS*/
   width: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-  transition: opasity 250ms var(--cubic), transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic);
 }
 
 .overlay-text {
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.03em;
   text-align: left;
   color: var(--white-color);
 }
@@ -630,8 +632,9 @@ FILTER BUTTONS*/
 .project-images-link:focus .overlay,
 .project-images-link:hover .overlay {
   transform: translateY(0);
-  opacity: 1;
 }
+
+/* BACKDROP-MODAL */
 
 .backdrop {
   position: fixed;
