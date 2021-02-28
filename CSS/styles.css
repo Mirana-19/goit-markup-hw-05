@@ -161,7 +161,7 @@ LOGO */
 header {
   position: sticky;
   top: -1px;
-  z-index: 999;
+  z-index: 2;
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: var(--white-color);
@@ -660,7 +660,9 @@ FILTER BUTTONS*/
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 3;
   transition: opacity 250ms var(--cubic);
 }
 
